@@ -1,15 +1,77 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Statement: Create a Pinterest-like Hero Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .hero-first {
+            margin: 70px 20px 70px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: black;
+        }
+
+        img {
+            width: 1000px;
+            height: 450px;
+        }
+
+        .container {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10px;
+            text-align: center;
+        }
+
+        button {
+            background-color: red;
+            border-radius: 3px;
+            color: white;
+            height: 37px;
+            width: 106px;
+            border: none;
+
+        }
+
+        button:hover {
+            background-color: #a3161b;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="hero">
+        <div class="hero-first">
+            <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="image.jpg">
+            <div class="container">
+                <h1>Welcome to my Pinterest clone</h1>
+                <p>discover new inspiration and save your favorite ideas</p>
+                <button type="button">Explore now</button>
+            </div>
+        </div>
+    </div>
 
 </body>
 
